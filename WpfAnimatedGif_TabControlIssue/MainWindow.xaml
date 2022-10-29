@@ -4,13 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAnimatedGif_TabControlIssue"
+        xmlns:ag="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
 
     <TabControl>
 
         <TabItem Header="Tab0">
-            <Image x:Name="imageControl"/>
+            <local:TestControl Source="{Binding Src}"/>
         </TabItem>
 
         <TabItem Header="Tab1">
